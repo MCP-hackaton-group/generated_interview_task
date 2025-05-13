@@ -1,0 +1,21 @@
+{
+  "role": {
+    "title": "Full Stack Developer",
+    "level": "Mid-Senior",
+    "focus": ["frontend", "backend"]
+  },
+  "requirements": {
+    "experience": "3+ years",
+    "skills": {
+      "must_have": ["JavaScript", "React", "Node.js", "API Design", "Git"],
+      "nice_to_have": ["TypeScript", "Docker", "AWS", "Testing", "CI/CD"]
+    }
+  },
+  "assignment_preferences": {
+    "difficulty": "Medium",
+    "estimated_hours": 4,
+    "areas_to_test": ["problem-solving", "code-quality", "architecture", "testing"],
+    "format": "Implementation + Code Review"
+  },
+  "hiring_manager_notes": "We're looking for someone who can work across our stack but has strong front-end skills. The candidate should demonstrate clean code practices and attention to performance. We want to see how they handle error cases and write tests."
+}

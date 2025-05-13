@@ -1,0 +1,81 @@
+{
+  "repository": {
+    "name": "fullstack-interview-template",
+    "description": "A template for full-stack developer home assignments"
+  },
+  "structure": {
+    "frontend": {
+      "technology": "React",
+      "files": [
+        {
+          "path": "src/App.jsx",
+          "description": "Main React application component",
+          "placeholders": ["TASK_DESCRIPTION", "API_ENDPOINTS"]
+        },
+        {
+          "path": "src/components/",
+          "description": "Directory for React components",
+          "placeholders": ["COMPONENT_TASKS"]
+        },
+        {
+          "path": "src/services/api.js",
+          "description": "API service functions",
+          "placeholders": ["API_IMPLEMENTATION"]
+        },
+        {
+          "path": "src/styles/",
+          "description": "CSS/SCSS styling files",
+          "placeholders": ["STYLING_REQUIREMENTS"]
+        }
+      ]
+    },
+    "backend": {
+      "technology": "Node.js/Express",
+      "files": [
+        {
+          "path": "server/index.js",
+          "description": "Express server setup",
+          "placeholders": ["SERVER_CONFIG"]
+        },
+        {
+          "path": "server/routes/",
+          "description": "API route definitions",
+          "placeholders": ["API_ROUTES"]
+        },
+        {
+          "path": "server/controllers/",
+          "description": "Request handlers",
+          "placeholders": ["CONTROLLER_LOGIC"]
+        },
+        {
+          "path": "server/models/",
+          "description": "Data models",
+          "placeholders": ["DATA_MODELS"]
+        }
+      ]
+    },
+    "tests": {
+      "files": [
+        {
+          "path": "tests/frontend/",
+          "description": "Frontend tests",
+          "placeholders": ["TEST_REQUIREMENTS"]
+        },
+        {
+          "path": "tests/backend/",
+          "description": "Backend tests",
+          "placeholders": ["TEST_REQUIREMENTS"]
+        }
+      ]
+    },
+    "documentation": {
+      "files": [
+        {
+          "path": "README.md",
+          "description": "Project documentation and setup instructions",
+          "placeholders": ["PROJECT_TITLE", "PROJECT_DESCRIPTION", "SETUP_INSTRUCTIONS", "REQUIREMENTS", "EVALUATION_CRITERIA"]
+        }
+      ]
+    }
+  }
+}
