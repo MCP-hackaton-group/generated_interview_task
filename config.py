@@ -1,0 +1,3 @@
+class Config:
+    JIRA_API_TOKEN = 'ATATT3xFfGF0-sLnkANXgjwfk9cPJttksyTXoF6JiN5iwa-TYkmC4F4YggW9GOkyNrdPqH1nRlKtc9zcoj6EZ1zrsKCFukfTfBYIblTHNCRMLrI8DhL734mQntZlIF7zzU5pZ5GdAco6LMKKG-bfpozIDKNBI4nCMleF-dXG0zxlMW7XCsvYWdU=CDFA47C0'
+    JIRA_EMAIL = 'dentzbar@gmail.com'
