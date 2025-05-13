@@ -1,7 +1,6 @@
 from jira import JIRA
 import os
-from config import Config            # your own settings module
-
+from dotenv import load_dotenv
 def get_jira_issues(query: dict) -> dict:
     """
     Return {issue_key: summary} for issues whose text contains the given topic.
@@ -9,8 +8,8 @@ def get_jira_issues(query: dict) -> dict:
     jira = JIRA(
         server="https://generated-interview-task.atlassian.net",    # e.g. "https://acme.atlassian.net"
         basic_auth=(                 # ► store secrets in env‑vars or Config
-            Config.JIRA_EMAIL,  # or Config.JIRA_EMAIL
-            Config.JIRA_API_TOKEN,
+            os.getenv("JIRA_EMAIL"),  # or Config.JIRA_EMAIL
+            os.getenv("JIRA_API_TOKEN"),
         ),
     )
 
