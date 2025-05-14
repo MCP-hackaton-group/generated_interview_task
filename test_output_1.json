@@ -1,0 +1,116 @@
+{
+  "homeAssignment": {
+    "title": "Backend Development Technical Assignment",
+    "description": "The goal of this assignment is to evaluate your skills in backend development, user authentication, REST API creation, and database schema design using technologies such as Python, Flask, and PostgreSQL. During this task, you will develop a robust backend system for a simplified e-commerce application, focusing on core functionalities requested below.",
+    "tasks": [
+      {
+        "title": "Set up the project environment",
+        "description": "Initialize a Python project using Flask as the backend framework. Make sure to configure the project structure and include necessary dependencies like Flask and SQLAlchemy. Use PostgreSQL as the database for the application",
+        "requirements": [
+          "Initialize a Flask project",
+          "Install and configure SQLAlchemy and psycopg2",
+          "Set up environment variables for database connection and secrets"
+        ]
+      },
+      {
+        "title": "Develop user authentication system",
+        "description": "Implement a user authentication system for the application to support signup and login functionalities. Use JWT for handling secure authentication.",
+        "requirements": [
+          "Create the necessary database schema for storing user information (e.g., username, email, hashed password)",
+          "Develop API endpoints for user signup and login",
+          "Ensure the passwords are securely hashed (e.g., using bcrypt)",
+          "Generate and validate JWT tokens for authentication"
+        ]
+      },
+      {
+        "title": "Design and develop product management RESTful API",
+        "description": "Create API endpoints that allow users to manage products (e.g., CRUD operations).",
+        "requirements": [
+          "Develop routes such as create, read, update, and delete products",
+          "Ensure only authenticated users can perform operations on the products",
+          "Optimize database queries to deliver good performance"
+        ]
+      },
+      {
+        "title": "Create a database schema for user profiles",
+        "description": "Design and implement an efficient database schema for user profiles to include details such as full name, email, and address.",
+        "requirements": [
+          "Develop migrations using SQLAlchemy or Flask-Migrate",
+          "Include necessary fields such as full_name, address, and email in the `user_profiles` table",
+          "Ensure proper normalization and indexing for the schema"
+        ]
+      },
+      {
+        "title": "Write API documentation",
+        "description": "Document the RESTful API endpoints you created for user authentication and product management.",
+        "requirements": [
+          "Describe each endpoint with supported HTTP methods, required headers, request parameters, and response formats",
+          "Provide an example of requests and expected responses for each endpoint",
+          "Include error handling cases and detailed examples of error responses"
+        ]
+      },
+      {
+        "title": "Develop automated tests",
+        "description": "Write unit tests for the backend services you implemented to ensure the application is working correctly.",
+        "requirements": [
+          "Set up a testing framework (e.g., pytest)",
+          "Write tests for the user authentication endpoints",
+          "Write tests for the product management endpoints"
+        ]
+      }
+    ],
+    "technologies": {
+      "must_use": [
+        "Python",
+        "Flask",
+        "PostgreSQL",
+        "SQLAlchemy"
+      ],
+      "optional_use": [
+        "Flask-Migrate",
+        "JWT",
+        "Docker (for containerization)"
+      ]
+    },
+    "evaluationCriteria": [
+      {
+        "criteria": "Code Quality",
+        "description": "Clean, readable, and modular code following best practices."
+      },
+      {
+        "criteria": "Functionality",
+        "description": "Fulfillment of the listed tasks with proper integration and behavior."
+      },
+      {
+        "criteria": "Database Design",
+        "description": "Efficient schema design with proper indexing and structure."
+      },
+      {
+        "criteria": "Testing",
+        "description": "Extent and reliability of automated tests implemented."
+      },
+      {
+        "criteria": "API Documentation",
+        "description": "Clarity, completeness, and correctness of the API documentation."
+      },
+      {
+        "criteria": "Performance",
+        "description": "Efficient handling of database queries and minimal unnecessary overhead."
+      }
+    ],
+    "submissionInstructions": {
+      "steps": [
+        "Fork the provided template repository from GitHub.",
+        "Build your project using the provided structure in the `backend` folder.",
+        "Update the `README.md` file with instructions on how to run your project locally, including database setup.",
+        "Ensure your completed code is pushed to a new branch named `completed-assignment`.",
+        "Email a link to the repository to your interviewer or submit it using the provided platform."
+      ],
+      "notes": [
+        "Include your tests and database migrations in the submission.",
+        "Ensure the project runs in a local or containerized environment without significant setup issues."
+      ],
+      "repository": "https://github.com/template-repo/technical-interview-template"
+    }
+  }
+}

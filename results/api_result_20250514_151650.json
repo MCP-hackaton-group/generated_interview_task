@@ -1,0 +1,123 @@
+{
+  "homeAssignment": {
+    "title": "Full Stack Developer Technical Assignment",
+    "description": "This assignment is designed to evaluate your skills in front-end and back-end development, database management, and API integration. You will create a functional web application while following industry best practices for code quality and documentation.",
+    "requiredTasks": [
+      {
+        "title": "Implement Frontend State Management",
+        "description": "Set up a React frontend with Redux to manage application state. Showcase a basic implementation, such as signup/sign-in state handling.",
+        "technologies": [
+          "React",
+          "Redux",
+          "JavaScript"
+        ],
+        "fileReference": "src/App.js"
+      },
+      {
+        "title": "Create Backend Router for Signup/Sign-In",
+        "description": "Develop and configure a backend router to handle user signup and sign-in functionality. Include input validation and error handling.",
+        "technologies": [
+          "Node.js",
+          "Express"
+        ],
+        "fileReference": "server/index.js"
+      },
+      {
+        "title": "Develop RESTful API for Product Management",
+        "description": "Create RESTful API endpoints to manage products (CRUD operations). Ensure proper input validation and use HTTP status codes appropriately.",
+        "technologies": [
+          "Node.js",
+          "Express",
+          "REST"
+        ],
+        "fileReference": "server/index.js"
+      },
+      {
+        "title": "Create Database Schema for User Profiles",
+        "description": "Design and implement a database schema for storing user profiles. Include fields such as name, email, password, and role.",
+        "technologies": [
+          "SQL"
+        ],
+        "fileReference": "server/index.js"
+      },
+      {
+        "title": "Optimize Database Queries",
+        "description": "Perform query optimization to improve database performance for user profile and product management operations.",
+        "technologies": [
+          "SQL"
+        ],
+        "fileReference": "server/index.js"
+      },
+      {
+        "title": "Create API Documentation",
+        "description": "Write documentation for all your API endpoints, detailing their purpose, required inputs, and expected outputs.",
+        "technologies": [
+          "Markdown"
+        ],
+        "fileReference": "README.md"
+      }
+    ],
+    "technologies": {
+      "mustUse": [
+        "React",
+        "Node.js",
+        "JavaScript",
+        "SQL",
+        "RESTful APIs"
+      ],
+      "optional": [
+        "GraphQL",
+        "Docker",
+        "Cloud Services"
+      ]
+    },
+    "evaluationCriteria": [
+      {
+        "area": "Frontend Development",
+        "criteria": [
+          "Proper use of React and Redux",
+          "Clean code structure and modular design",
+          "Functionality and UI performance"
+        ]
+      },
+      {
+        "area": "Backend Development",
+        "criteria": [
+          "Proper design of API endpoints",
+          "Validation and error handling",
+          "Scalability and maintainability"
+        ]
+      },
+      {
+        "area": "Database Management",
+        "criteria": [
+          "Correct database schema design",
+          "Query performance optimization",
+          "Data consistency and integrity"
+        ]
+      },
+      {
+        "area": "Documentation",
+        "criteria": [
+          "Completeness of API documentation",
+          "Clarity and conciseness",
+          "Professional formatting"
+        ]
+      }
+    ],
+    "submissionInstructions": {
+      "repository": {
+        "name": "technical-interview-template",
+        "description": "Template for Full Stack Developer interview assignment"
+      },
+      "steps": [
+        "Fork the provided template repository.",
+        "Implement all required tasks in the provided file structure.",
+        "Ensure code quality with proper comments and self-explanatory variable names.",
+        "Include the completed API documentation in the README.md file.",
+        "Commit your changes and create a pull request to the original repository.",
+        "Share the pull request link as your submission."
+      ]
+    }
+  }
+}

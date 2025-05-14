@@ -1,0 +1,96 @@
+{
+  "homeAssignment": {
+    "title": "Frontend Developer Technical Assignment",
+    "description": "You will build a product management dashboard using React to demonstrate your skills in frontend development, UI design, and data validation. The assignment includes implementing Redux for state management, responsive UI components, form validation, and connecting with an API for data manipulation.",
+    "tasks": [
+      {
+        "title": "Implement state management with Redux",
+        "description": "Use Redux to manage the application's state, including product data and UI states. Ensure proper separation of concerns and utilize Redux middleware where appropriate."
+      },
+      {
+        "title": "Design a responsive dashboard UI",
+        "description": "Create a dashboard UI using React and CSS/HTML. The design should be fully responsive and include a product listing, search bar, and filters."
+      },
+      {
+        "title": "Develop form validation",
+        "description": "Implement client-side form validation for product creation/editing forms using React. Include validation rules like required fields, max character limits, and valid data formats."
+      },
+      {
+        "title": "Integrate API endpoints",
+        "description": "Connect the frontend with API endpoints (provided in the backend structure). Handle API calls for CRUD operations related to product management."
+      }
+    ],
+    "technologies": {
+      "mandatory": [
+        "JavaScript",
+        "React",
+        "CSS",
+        "HTML",
+        "Redux"
+      ],
+      "optional": [
+        "Data Visualization Libraries (e.g., D3.js)",
+        "TypeScript",
+        "Node.js"
+      ]
+    },
+    "tools": {
+      "mandatory": [
+        "Git",
+        "Package Manager (e.g., npm or yarn)",
+        "Code Editor (e.g., VSCode)"
+      ]
+    },
+    "evaluationCriteria": [
+      {
+        "criterion": "Code Quality",
+        "description": "Ensure clean, readable, and maintainable code with proper naming conventions and comments."
+      },
+      {
+        "criterion": "Responsiveness",
+        "description": "UI design should be fully responsive and functional across different screen sizes."
+      },
+      {
+        "criterion": "State Management",
+        "description": "Proper implementation of Redux for managing complex application state."
+      },
+      {
+        "criterion": "Form Validation",
+        "description": "User errors should be appropriately handled using robust client-side validation."
+      },
+      {
+        "criterion": "API Integration",
+        "description": "RESTful API integration should work seamlessly with the frontend."
+      },
+      {
+        "criterion": "Project Documentation",
+        "description": "Provide a clear and concise README.md with instructions for running and testing the application."
+      }
+    ],
+    "submissionInstructions": {
+      "repositorySetup": {
+        "templateRepository": {
+          "name": "technical-interview-template",
+          "structure": [
+            "frontend/src/App.js",
+            "backend/server/index.js",
+            "README.md"
+          ]
+        },
+        "instructions": "Clone the provided template repository. Use the 'src/' directory for frontend code and 'server/' directory for backend code."
+      },
+      "procedure": [
+        "Fork the provided template repository.",
+        "Complete the tasks as described.",
+        "Ensure that the application runs successfully with all required functionality.",
+        "Update the README.md with setup and usage instructions.",
+        "Push the code to your forked repository and submit the repository link."
+      ],
+      "notes": [
+        "Ensure all code is committed to the repository.",
+        "Do not include any personal data in your submission.",
+        "Your submission should pass basic functional tests outlined in the README.md."
+      ]
+    }
+  }
+}
