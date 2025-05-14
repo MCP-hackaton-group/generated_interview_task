@@ -9,6 +9,7 @@ It leverages the github_clone.py functionality to handle repository cloning oper
 import os
 import sys
 import logging
+import glob
 from typing import Dict, Any, Optional, List, Union
 import autogen
 from autogen import Agent, AssistantAgent, UserProxyAgent, ConversableAgent
@@ -748,15 +749,17 @@ def create_github_agents(use_llm: bool = True, llm_config: Dict[str, Any] = None
             api_key = os.environ["AZURE_OPENAI_API_KEY"]
             endpoint = os.environ["AZURE_OPENAI_ENDPOINT"]
             deployment_name = os.environ.get("DEPLOYMENT_NAME", "Phi-4-mini-instruct")
-            
             _llm_config = {
                 "config_list": [{
                     "model": deployment_name,
                     "api_type": "azure",
                     "api_key": api_key,
                     "api_version": "2023-07-01-preview",  # Update this to your Azure OpenAI API version
-                    "api_base": endpoint,
-                    "deployment_name": deployment_name
+                    "base_url": endpoint,
+                    "azure": {
+                        "deployment": deployment_name,
+                        "api_version": "2023-07-01-preview"
+                    }
                 }]
             }
             logger.info("Using Azure OpenAI configuration with API key")
