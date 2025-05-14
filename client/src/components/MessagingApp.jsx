@@ -19,43 +19,38 @@ export default function MessagingApp() {
 const handleSendMessage = async () => {
   if (!inputValue.trim()) return;
 
-  // Add user message
+  // push the user’s message into the chat
   const userMessage = {
     id: Date.now().toString(),
     content: inputValue,
     sender: "user",
     timestamp: new Date(),
   };
-
   setMessages((prev) => [...prev, userMessage]);
   setInputValue("");
 
   try {
-    // Send the user message to Flask API using Axios
-    const response = await axios.post("http://localhost:5001/user-message", {
-      message: inputValue,  // Send the message as JSON in the body
-    }, {
-      headers: {
-        "Content-Type": "application/json", // Ensure the Content-Type is application/json
-      },
-    });
+    // send the single prompt to Flask
+    const response = await axios.post(
+      "http://localhost:5001/user-message",
+      { message: inputValue },
+      { headers: { "Content-Type": "application/json" } }
+    );
 
-    const data = response.data; // Get the data from the response
-
-    // Display the response from the Flask API
+    // the backend already returns a JSON object → stringify for display
+    const data = response.data;
     const agentMessage = {
       id: Date.now().toString(),
-      content: data.message,
+      content: JSON.stringify(data, null, 2),  // pretty JSON
       sender: "agent",
       timestamp: new Date(),
     };
-
     setMessages((prev) => [...prev, agentMessage]);
-
-  } catch (error) {
-    console.error("Error sending message to Flask server:", error);
+  } catch (err) {
+    console.error("Error sending message to Flask server:", err);
   }
 };
+
 
 
 

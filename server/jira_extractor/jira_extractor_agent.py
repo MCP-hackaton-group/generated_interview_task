@@ -1,7 +1,7 @@
 import os
 from openai import AzureOpenAI
 from jira_extractor.user_functions import get_jira_issues
-from server.utils import extract_json_from_response
+from utils import extract_json_from_response
 
 class JiraExtractorAgent:
     def __init__(self):

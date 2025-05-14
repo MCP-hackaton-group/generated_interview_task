@@ -1,5 +1,5 @@
 from jira_extractor.jira_extractor_agent import main as jira_extractor_agent
-from managerPrompt_taskGenerate_Agents.mcpServer_taskGenerate import generate_home_assignment 
+from mcpServer_taskGenerate import generate_home_assignment 
 import json
 def main_agents_workflow(tasks_description_json):
     data_json = {}
@@ -11,7 +11,7 @@ def main_agents_workflow(tasks_description_json):
 # 2. Github Repo Agent
     # github_response_json = github_repo_agent(tasks_description_json)
     # Load template repository data from JSON file
-    with open("managerPrompt_taskGenerate_Agents/mock_data/template_repo.json", "r") as file:
+    with open("./template_repo.json", "r") as file:
         github_response_json = json.loads(file.read())
     data_json["template_repo"] = github_response_json
 

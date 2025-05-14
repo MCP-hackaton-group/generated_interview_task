@@ -1,4 +1,4 @@
-from mcpServer_taskGenerate import generate_home_assignment
+from server.mcpServer_taskGenerate import generate_home_assignment
 
 input_json = {
     "jira_tasks": {
