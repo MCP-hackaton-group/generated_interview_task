@@ -1,0 +1,33 @@
+{
+  "managerPrompt": {
+    "version": "1.0",
+    "generatedOn": "2025-05-14"
+  },
+  "role": {
+    "title": "Likely Developer",
+    "level": "Senior",
+    "focus": [
+      "frontend",
+      "backend"
+    ],
+    "description": "We are looking for a Senior Likely Developer with expertise in frontend, backend. Key skills required include python, java, react. "
+  },
+  "requirements": {
+    "skills": {
+      "must_have": [
+        "python",
+        "java",
+        "react"
+      ],
+      "nice_to_have": []
+    }
+  },
+  "assignment_preferences": {
+    "difficulty": "Medium",
+    "estimated_hours": "3-4",
+    "areas_to_test": [
+      "code quality",
+      "functionality"
+    ]
+  }
+}

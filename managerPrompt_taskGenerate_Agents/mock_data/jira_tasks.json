@@ -1,0 +1,74 @@
+{
+  "tasks": [
+    {
+      "id": "DEV-101",
+      "title": "Implement user authentication service",
+      "description": "Create a secure authentication service that handles user login, registration, and password reset using JWT tokens.",
+      "status": "In Progress",
+      "priority": "High",
+      "assignee": "John Smith",
+      "labels": ["backend", "security", "api"],
+      "components": ["authentication", "user-service"],
+      "story_points": 8,
+      "sprint": "Sprint 23"
+    },
+    {
+      "id": "DEV-102",
+      "title": "Develop data visualization dashboard",
+      "description": "Create an interactive dashboard that visualizes user engagement metrics and system performance data using React and D3.js.",
+      "status": "To Do",
+      "priority": "Medium",
+      "assignee": "Jane Doe",
+      "labels": ["frontend", "visualization", "react"],
+      "components": ["dashboard", "analytics"],
+      "story_points": 13,
+      "sprint": "Sprint 24"
+    },
+    {
+      "id": "DEV-103",
+      "title": "Optimize database queries for user search",
+      "description": "Refactor existing database queries to improve performance of the user search functionality. Current search takes >3s, target is <500ms.",
+      "status": "To Do",
+      "priority": "High",
+      "assignee": "Alex Johnson",
+      "labels": ["backend", "performance", "database"],
+      "components": ["search-service", "database"],
+      "story_points": 5,
+      "sprint": "Sprint 23"
+    },
+    {
+      "id": "DEV-104",
+      "title": "Implement automated CI/CD pipeline",
+      "description": "Set up automated testing and deployment pipeline using GitHub Actions to ensure code quality and streamline deployment.",
+      "status": "To Do",
+      "priority": "Medium",
+      "assignee": "Sam Wilson",
+      "labels": ["devops", "automation", "testing"],
+      "components": ["ci-cd", "infrastructure"],
+      "story_points": 8,
+      "sprint": "Sprint 23"
+    },
+    {
+      "id": "DEV-105",
+      "title": "Create RESTful API for content management",
+      "description": "Design and implement a RESTful API for managing blog posts, media content, and user-generated content. API should follow OpenAPI standards.",
+      "status": "In Progress",
+      "priority": "Medium",
+      "assignee": "Maria Garcia",
+      "labels": ["backend", "api", "content"],
+      "components": ["api-gateway", "content-service"],
+      "story_points": 13,
+      "sprint": "Sprint 24"
+    }
+  ],
+  "tech_stack": {
+    "frontend": ["React", "TypeScript", "Redux", "Material UI", "D3.js"],
+    "backend": ["Node.js", "Express", "Python", "FastAPI", "PostgreSQL"],
+    "infrastructure": ["AWS", "Docker", "Kubernetes", "GitHub Actions", "Terraform"],
+    "testing": ["Jest", "Cypress", "Pytest"]
+  },
+  "team_skills": {
+    "required": ["JavaScript", "TypeScript", "React", "Node.js", "SQL"],
+    "preferred": ["Python", "AWS", "Docker", "CI/CD", "NoSQL"]
+  }
+}
