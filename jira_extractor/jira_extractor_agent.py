@@ -10,7 +10,7 @@ class JiraExtractorAgent:
         self.deployment = "gpt-4.1"
         self.api_version = "2024-12-01-preview"
         
-        self.subscription_key = os.getenv("AZURE_OPENAI_KEY")
+        self.subscription_key = os.getenv("AZURE_OPENAI_API_KEY_JIRA_EXT")
         
         self.client = AzureOpenAI(
             api_version=self.api_version,
@@ -95,7 +95,7 @@ if __name__ == "__main__":
     agent = JiraExtractorAgent()
 
     tasks_description_json = {
-        "tasks_description": "backend development, user authentication, signup page, database design, api integration",
+        "tasks_description": "backend development, user authentication, signup page, database design, api integration, database schema, api endpoints, kubernetes, CI/CD, error logging, monitoring, unit tests, performance optimization, frontend state management, automated backup, documentation, data validation, notification system, mobile-responsive layouts, load balancing, search functionality, user onboarding",
         "language": "python, REACT, CSS, HTML"
     }
 

@@ -1,7 +1,6 @@
 from jira import JIRA
 import os
 from dotenv import load_dotenv
-from typing import Any, Callable, Set, Dict, List, Optional
 
 load_dotenv()
 
@@ -32,5 +31,5 @@ def get_jira_issues(query: dict) -> dict:
 
 
 if __name__ == "__main__":
-    print(get_jira_issues({"topic": "router"}))
+    print(get_jira_issues({"topic": "user"}))
 
