@@ -1,0 +1,2 @@
+Flask==3.0.*
+vercel-wsgi==0.13.*  # only needed if you prefer the explicit WSGI wrapper
