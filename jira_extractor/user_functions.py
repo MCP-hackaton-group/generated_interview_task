@@ -1,6 +1,10 @@
 from jira import JIRA
 import os
 from dotenv import load_dotenv
+from typing import Any, Callable, Set, Dict, List, Optional
+
+load_dotenv()
+
 def get_jira_issues(query: dict) -> dict:
     """
     Return {issue_key: summary} for issues whose text contains the given topic.
@@ -21,15 +25,12 @@ def get_jira_issues(query: dict) -> dict:
     jql = f'text ~ "{topic}" ORDER BY created DESC'
     issues = jira.search_issues(jql)
 
-    # jql = "SCRUM-1"
-    # issues = jira.issue(jql)
-
-    
-
     print('issues:')
     print(issues)
 
     return {i.key: i.fields.summary for i in issues}
 
+
 if __name__ == "__main__":
-    print(get_jira_issues({"topic": "signup"}))
+    print(get_jira_issues({"topic": "router"}))
+
