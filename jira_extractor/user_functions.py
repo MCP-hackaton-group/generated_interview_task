@@ -1,8 +1,8 @@
 from jira import JIRA
 import os
 from dotenv import load_dotenv
-import shutil  # Added missing import for shutil module
-import subprocess
+
+load_dotenv()
 
 def get_jira_issues(query: dict) -> dict:
     """
@@ -49,5 +49,5 @@ def clone_github_repo(repo_url: str, clone_dir: str = "./cloned_repo"):
 
 
 if __name__ == "__main__":
-    # print(get_jira_issues({"topic": "signup"}))
-    print(clone_github_repo("https://github.com/adielashrov/trust-ai-roma-for-llm", "./trust-ai-roma-for-llm"))
+    print(get_jira_issues({"topic": "user"}))
+

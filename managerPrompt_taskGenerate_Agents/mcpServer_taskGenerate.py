@@ -5,8 +5,8 @@ from openai import AzureOpenAI
 import json
 
 load_dotenv()
-azure_openai_key = os.getenv("AZURE_OPENAI_KEY")
-azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
+azure_openai_key = os.getenv("AZURE_OPENAI_KEY_TASK_GEN")
+azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT_TASK_GEN")
 deployment_name = "taskCreator"
 
 client = AzureOpenAI(
@@ -29,12 +29,12 @@ def generate_home_assignment(input_json: dict) -> dict:
 
     Returns: dict (homeAssignment JSON)
     """
-    jira_tasks = input_json.get("jira_tasks")
-    prompt_data = input_json.get("prompt_data")
-    template_repo = input_json.get("template_repo")
+    jira_tasks = input_json.get("jira_tasks", {})
+    prompt_data = input_json.get("prompt_data", {})
+    template_repo = input_json.get("template_repo", {})
 
-    if not jira_tasks or not prompt_data or not template_repo:
-        raise ValueError("Missing one or more required fields: jira_tasks, prompt_data, template_repo")
+    # if not jira_tasks or not prompt_data or not template_repo:
+    #     raise ValueError("Missing one or more required fields: jira_tasks, prompt_data, template_repo")
 
     system_prompt = """
     You are an assistant designed to generate technical home assignments for developer candidates based on three input sources:
