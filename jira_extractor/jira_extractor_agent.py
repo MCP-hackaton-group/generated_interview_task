@@ -10,7 +10,7 @@ class JiraExtractorAgent:
         self.deployment = "gpt-4.1"
         self.api_version = "2024-12-01-preview"
         
-        self.subscription_key = os.getenv("AZURE_OPENAI_KEY")
+        self.subscription_key = os.getenv("AZURE_OPENAI_KEY_JIRA")
         
         self.client = AzureOpenAI(
             api_version=self.api_version,
