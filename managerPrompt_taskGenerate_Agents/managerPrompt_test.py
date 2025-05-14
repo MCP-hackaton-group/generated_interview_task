@@ -1,4 +1,4 @@
-from mcpServer_managerPrompt import generate_manager_prompt_conversation
+from server.api.mcpServer_managerPrompt import generate_manager_prompt_conversation
 
 result = generate_manager_prompt_conversation([
     "We're hiring a fullstack engineer with Node.js and React experience.",
