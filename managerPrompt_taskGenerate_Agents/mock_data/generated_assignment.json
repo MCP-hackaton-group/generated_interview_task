@@ -1,79 +1,33 @@
 {
-  "homeAssignment": {
-    "description": "Build a full-stack web application featuring a user authentication system and a data visualization dashboard.",
-    "evaluation_criteria": [
-      "Code quality and adherence to best practices.",
-      "Clean architecture and modular components.",
-      "Handling of error cases and edge scenarios.",
-      "Test coverage and reliability."
+  "managerPrompt": {
+    "version": "1.0",
+    "generatedOn": "2025-05-14"
+  },
+  "role": {
+    "title": "Likely Developer",
+    "level": "Senior",
+    "focus": [
+      "frontend",
+      "backend"
     ],
-    "submission_instructions": {
-      "delivery": "Submit the assignment as a GitHub repository link or in a zipped archive.",
-      "expected_files": [
-        "src/App.jsx",
-        "src/components/",
-        "src/services/api.js",
-        "server/index.js",
-        "server/routes/",
-        "server/controllers/",
-        "tests/frontend/",
-        "tests/backend/",
-        "README.md"
+    "description": "We are looking for a Senior Likely Developer with expertise in frontend, backend. Key skills required include python, java, react. "
+  },
+  "requirements": {
+    "skills": {
+      "must_have": [
+        "python",
+        "java",
+        "react"
       ],
-      "steps": [
-        "Clone the provided GitHub repository template.",
-        "Build your assignment based on the tasks described above.",
-        "Fill out the placeholders in files under 'src/' and 'server/' directories.",
-        "Add test cases in 'tests/' directories.",
-        "Update the README.md file with instructions on how to run the project and your thought process."
-      ]
-    },
-    "tasks": [
-      {
-        "description": "Using React and D3.js, create a dashboard that displays user engagement metrics and system performance data. Include interactive elements such as zooming and filtering.",
-        "requirements": [
-          "Integrate mock data fetched from the backend API.",
-          "Use reusable React components and follow best practices.",
-          "Implement basic styling using Material UI."
-        ],
-        "title": "Frontend: Develop a Data Visualization Dashboard"
-      },
-      {
-        "description": "Set up a service using Node.js and Express to handle user login, registration, and password reset functionality.",
-        "requirements": [
-          "Use JWT tokens for authentication.",
-          "Validate input data at both client and server endpoints.",
-          "Ensure secure storage of user passwords using industry standards (e.g., bcrypt)."
-        ],
-        "title": "Backend: Implement a Secure User Authentication Service"
-      },
-      {
-        "description": "Fetch user metrics and performance data from a mock API endpoint and display them in the data visualization dashboard.",
-        "requirements": [
-          "Use Axios or Fetch API for API calls.",
-          "Handle error responses gracefully on the frontend."
-        ],
-        "title": "Integration: Connect Frontend Dashboard to Backend APIs"
-      },
-      {
-        "description": "Add test cases for critical functionality, such as authentication endpoints and data visualization components.",
-        "requirements": [
-          "Write tests using Jest for backend endpoints.",
-          "Test React components using Cypress or a similar tool."
-        ],
-        "title": "Testing: Write Unit and Integration Tests"
-      }
-    ],
-    "technologies_and_tools": [
-      "JavaScript",
-      "React",
-      "D3.js",
-      "Node.js",
-      "Express",
-      "JWT",
-      "Jest",
-      "Cypress"
-    ],
-    "title": "Full-Stack Developer Technical Assignment"
+      "nice_to_have": []
+    }
+  },
+  "assignment_preferences": {
+    "difficulty": "Medium",
+    "estimated_hours": "3-4",
+    "areas_to_test": [
+      "code quality",
+      "functionality"
+    ]
   }
 }
