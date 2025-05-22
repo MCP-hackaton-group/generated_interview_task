@@ -34,18 +34,6 @@ def get_jira_issues(query: dict) -> dict:
 
     return {i.key: i.fields.summary for i in issues}
 
-def clone_github_repo(repo_url: str, clone_dir: str = "./cloned_repo"):
-    if not shutil.which("git"):
-        raise EnvironmentError("Git is not installed or not in PATH.")
-
-    if os.path.exists(clone_dir):
-        raise FileExistsError(f"Directory '{clone_dir}' already exists.")
-    
-    try:
-        subprocess.run(["git", "clone", repo_url, clone_dir], check=True)
-        print(f"Repository cloned to {clone_dir}")
-    except subprocess.CalledProcessError as e:
-        print("Failed to clone repository:", e)
 
 
 if __name__ == "__main__":

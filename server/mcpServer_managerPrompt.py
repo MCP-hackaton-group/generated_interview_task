@@ -5,8 +5,8 @@ from openai import AzureOpenAI
 
 load_dotenv()
 
-azure_openai_key = os.getenv("AZURE_OPENAI_KEY_TASK_GEN")
-azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT_TASK_GEN")
+azure_openai_key = os.getenv("AZURE_OPENAI_API_KEY_JIRA_EXT")
+azure_endpoint = "https://ai-dentzbar2802ai654595622363.openai.azure.com/"
 deployment_name = "PromptAgent"
 
 client = AzureOpenAI(

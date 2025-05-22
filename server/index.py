@@ -14,12 +14,20 @@ CORS(app)  # allow all origins during dev
 def parse_maybe_json(value):
     """Return dict if value is JSON or dict, otherwise None."""
     if isinstance(value, dict):
+        print('\n\nparsed dict value:')
+        print(value)
         return value
     if isinstance(value, str):
         try:
+            print('\n\nparsed str value:')
+            print(value)
             return json.loads(value)
         except json.JSONDecodeError:
+            print('\n\nerror value:')
+            print(value)
             return None
+    print('\n\nerror value:')
+    print(value)
     return None
 
 
@@ -37,11 +45,13 @@ def user_message():
         return jsonify({"error": "message must be a non‑empty string"}), 400
 
     # --- one pass through your main agent ----------------------------------
-    raw_reply = main_agents_workflow(prompt)          # may be str or dict
+    raw_reply = main_agents_workflow(prompt) 
+    print('\n\nraw reply:')
+    print(raw_reply)
+    # may be str or dict
     reply_dict = parse_maybe_json(raw_reply)
 
-    if is_final(reply_dict):                          # already the final JSON
-        return jsonify(reply_dict)
+    return jsonify(reply_dict)
 
     # --- not final → fall back to generic generator -------------------------
     try:
